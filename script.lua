@@ -1,4 +1,12 @@
+local Library = loadstring(game:HttpGet("https://raw.githubusercontent.com/xHeptc/Kavo-UI-Library/main/source.lua"))()
+local script = Library.CreateLib("script", "Ocean")
+local script = script:NewTab("script")
+local script = script:NewSection("Script")
+script:NewButton("Prison Life 1", "", function()
 loadstring(game:HttpGet("https://raw.githubusercontent.com/GwnStefano/NexusHub/main/Main", true))()
+end)
+
+script:NewButton("Prison Life 2", "", function()
 -- Made by Jake11price
 local gui = Instance.new("ScreenGui")
 local main = Instance.new("Frame")
@@ -6231,4 +6239,5 @@ open.TextWrapped = true
 open.MouseButton1Down:connect(function()
 openmain.Visible = false
 main.Visible = true
+end)
 end)
